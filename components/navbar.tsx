@@ -23,7 +23,7 @@ export function NavHeader() {
           </li>
 
           <li className="hidden md:block">
-            <Link href={""} className="text-gray-400 text-lg font-medium hover:transition-colors hover:duration-500 hover:text-white">Contact Me</Link>
+            <Link href={"/contact-me"} className="text-gray-400 text-lg font-medium hover:transition-colors hover:duration-500 hover:text-white">Contact Me</Link>
           </li>
         
 
