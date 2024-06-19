@@ -3,6 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import emailjs from '@emailjs/browser'
 
 import { Button } from "@/components/ui/button";
 import {
@@ -43,15 +44,31 @@ export default function Contact() {
   
   console.log(form.getValues())
 
-  function onSubmit(data: z.infer<typeof formSchema>) {
-    toast({
-      title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
-    })
+  async function onSubmit(data: z.infer<typeof formSchema>) {
+    // toast({
+    //   title: "You submitted the following values:",
+    //   description: (
+    //     <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
+    //       <code className="text-white">{JSON.stringify(data, null, 2)}</code>
+    //     </pre>
+    //   ),
+    // })
+
+    try {
+      // await emailjs.send('service_ypxcyww', 'template_q6xzxce', data, 'qZrVeT9nInjm361MU')
+       toast({
+         description: "Your message has been sent.",
+       });
+       form.resetField("name")
+       form.resetField("email")
+       form.resetField("message")
+    } catch (error) {
+      console.log(error);
+      toast({
+        variant: "destructive",
+        description: "Error occurred."
+      });
+    }
   }
 
   return (

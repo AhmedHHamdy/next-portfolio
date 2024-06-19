@@ -52,6 +52,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        toast: {
+          DEFAULT: "hsl(var(--toast))",
+          // foreground: "hsl(var(--toast-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
