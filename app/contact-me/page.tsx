@@ -72,7 +72,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="flex px-8 sm:px-0 w-full sm:w-11/12 md:w-9/12 xl:w-12/12 flex-col items-center gap-10 mx-auto pt-8 sm:pt-16 xl:max-w-4xl">
+    <section className="relative flex px-8 sm:px-10 w-full sm:w-11/12 md:w-9/12 xl:w-12/12 flex-col items-center gap-10 mx-auto pt-8 sm:pt-16 xl:max-w-6xl bg-background min-h-screen z-50">
       <h1 className="text-4xl font-semibold self-start mt-3">Contact Me</h1>
       <section className="text-lg text-gray-400 w-full">
         <Form {...form}>
