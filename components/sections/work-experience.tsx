@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
 import { useRouter } from 'next/navigation'
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link";
 
 export default function WorkExperience() {
   const router = useRouter()
@@ -93,11 +94,13 @@ export default function WorkExperience() {
         </section>
           
 
-        <Button variant="secondary" className="mt-10 w-full rounded-[0.3rem] flex items-center gap-2" 
-          onClick={() => window.open("https://drive.google.com/file/d/1gn81okfh-otCwjhOoCRQAH5W35drKfBY/view", "_blank", "noopener,noreferrer")}
-        >
+        <Link
+          href={"https://drive.google.com/file/d/1gn81okfh-otCwjhOoCRQAH5W35drKfBY/view"}
+          target="_blank"
+          className="mt-10 w-full bg-secondary rounded-[0.3rem] px-4 py-2 justify-center flex items-center gap-2 hover:bg-secondary/80"
+          >
           Download Resume <FileUser color="#ba68bb" className="h-6" />
-        </Button>
+        </Link>
       </section>
 
       <section className="flex flex-col border-4 rounded-xl p-6">

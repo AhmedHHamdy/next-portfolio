@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import TextAnimation from "@/components/text-animation";
 import { Button } from "../ui/button";
 import { useRouter } from 'next/navigation'
+import Link from "next/link";
 
 export default function Intro() {
 
@@ -53,13 +54,13 @@ export default function Intro() {
             >
               View Projects <FolderGit color="#ba68bb" className="h-6" />
             </Button>
-            <Button
-              variant="secondary"
-              className="rounded-[0.3rem] flex items-center gap-2"
-              onClick={() => window.open("https://drive.google.com/file/d/1gn81okfh-otCwjhOoCRQAH5W35drKfBY/view", "_blank", "noopener,noreferrer")}
+            <Link
+              href={"https://drive.google.com/file/d/1gn81okfh-otCwjhOoCRQAH5W35drKfBY/view"}
+              target="_blank"
+              className="bg-secondary rounded-[0.3rem] px-4 flex items-center gap-2 hover:bg-secondary/80"
               >
               Download Resume <FileUser color="#ba68bb" className="h-6" />
-            </Button>
+            </Link>
           </section>
 
           <section className="flex flex-wrap justify-start items-center gap-6 mt-4">
