@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <section className="px-10 relative bg-background w-full sm:w-11/12 md:w-9/12 xl:w-12/1 xl:max-w-6xl mx-auto z-1000 p-10">
+    <section className="px-10 relative bg-background w-full xl:w-12/12 xl:max-w-6xl mx-auto z-1000 p-10">
       <footer className="flex flex-col sm:gap-4 lg:flex-row justify-between items-center">
         <ul
           className="flex justify-between gap-6 items-center"
@@ -11,7 +11,7 @@ export default function Footer() {
           <li className="hidden md:block">
             <Link
               href={"/"}
-              className="text-gray-400 text-lg font-medium hover:transition-colors hover:duration-500 hover:text-white"
+              className="text-gray-400 text-lg font-medium hover:transition-colors hover:duration-500 hover:text-[#ba68bb]"
             >
               Home
             </Link>
@@ -20,7 +20,7 @@ export default function Footer() {
           <li className="hidden md:block">
             <Link
               href={"/projects"}
-              className="text-gray-400 text-lg font-medium hover:transition-colors hover:duration-500 hover:text-white"
+              className="text-gray-400 text-lg font-medium hover:transition-colors hover:duration-500 hover:text-[#ba68bb]"
             >
               Projects
             </Link>
@@ -29,7 +29,7 @@ export default function Footer() {
           <li className="hidden md:block">
             <Link
               href={"/designs"}
-              className="text-gray-400 text-lg font-medium hover:transition-colors hover:duration-500 hover:text-white"
+              className="text-gray-400 text-lg font-medium hover:transition-colors hover:duration-500 hover:text-[#ba68bb]"
             >
               Designs
             </Link>

@@ -15,7 +15,7 @@ const dancingScriptFont = Dancing_Script({ subsets: ["latin"] })
 
 export function NavHeader() {
   return (
-    <section className="relative bg-background w-full sm:w-11/12 md:w-9/12 xl:w-12/1 xl:max-w-6xl mx-auto z-1000 p-10">
+    <section className="relative bg-background w-full sm:w-12/12 xl:w-12/12 xl:max-w-6xl mx-auto z-1000 p-10">
       <header className="flex justify-between items-center">
         <Link
           href={"/"}

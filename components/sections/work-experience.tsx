@@ -4,6 +4,7 @@ import { BriefcaseBusiness, Cpu,  FileUser, FolderGit } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
 import { useRouter } from 'next/navigation'
+import { Badge } from "@/components/ui/badge"
 
 export default function WorkExperience() {
   const router = useRouter()
@@ -107,91 +108,50 @@ export default function WorkExperience() {
 
             <section>
               <h3 className="mb-2">Frontend Development</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="border-2 border-[#e34c26] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_html5.svg')] bg-contain bg-no-repeat"></span> HTML 
-                </span>
-                <span className="border-2 border-[#264de4] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_css3.svg')] bg-contain bg-no-repeat"></span> CSS
-                </span>
-                <span className="border-2 border-[#f7df1e] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_js.svg')] bg-contain bg-no-repeat"></span> JavaScript
-                </span>
-                <span className="border-2 border-[#007ACC] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_ts.svg')] bg-contain bg-no-repeat"></span> TypeScript
-                </span>
-                <span className="border-2 border-[#61dafb] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_react.svg')] bg-contain bg-no-repeat"></span> React
-                </span>
-                <span className="border-2 border-white p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_nextjs.svg')] bg-contain bg-no-repeat"></span> NextJS
-                </span>
-                <span className="border-2 border-[#00BCFF] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_tailwind.svg')] bg-contain bg-no-repeat"></span> Tailwind CSS
-                </span>
-                {/* <span className="border-2 border-[#ff9500] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_graphql.svg')] bg-contain bg-no-repeat"></span> GraphQL
-                </span> */}
+              <div className="flex flex-wrap gap-x-2 gap-y-3">
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">HTML</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">CSS</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">JavaScript</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">TypeScript</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">React</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">NextJS</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Tailwind CSS</Badge>
               </div>
             </section>
 
             <section className="my-6">
               <h3 className="mb-2">Backend Development</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="border-2 border-[#6cc24a] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_node.svg')] bg-contain bg-no-repeat"></span> Node.js
-                </span>
-                <span className="border-2 border-white p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_express.svg')] bg-contain bg-no-repeat"></span> Express
-                </span>
-                {/* <span className="border-2 border-[#4479a1] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_mysql.svg')] bg-contain bg-no-repeat"></span> MySQL
-                </span>
-                <span className="border-2 border-[#336791] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_postgresql.svg')] bg-contain bg-no-repeat"></span> PostgreSQL
-                </span> */}
-                <span className="border-2 border-[#4db33d] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_mongodb.svg')] bg-contain bg-no-repeat"></span> MongoDB
-                </span>
-                {/* <span className="border-2 border-[#3572A5] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_python.svg')] bg-contain bg-no-repeat"></span> Python
-                </span> */}
-                {/* <span className="border-2 border-[#0074a6] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_django.svg')] bg-contain bg-no-repeat"></span> Django
-                </span>
-                <span className="border-2 border-[#ff2d20] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_laravel.svg')] bg-contain bg-no-repeat"></span> Laravel
-                </span> */}
-                {/* <span className="border-2 border-[#777bb4] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_php.svg')] bg-contain bg-no-repeat"></span> PHP
-                </span>
-                <span className="border-2 border-[#007396] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_java.svg')] bg-contain bg-no-repeat"></span> Java
-                </span>
-                <span className="border-2 border-[#00ADD8] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_golang.svg')] bg-contain bg-no-repeat"></span> Go
-                </span> */}
+              <div className="flex flex-wrap gap-x-2 gap-y-3">
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Node.js</Badge>
+
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Express</Badge>
+
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">MongoDB</Badge>
+
+                {/* <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">MySQL</Badge>
+
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">PostgreSQL</Badge>
+
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Python</Badge>
+
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Go</Badge>
+
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Django</Badge>
+
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Laravel</Badge>
+
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Java</Badge> */}
               </div>
             </section>
 
             <section>
               <h3 className="mb-2">Design & Tools</h3>
-              <div className="flex flex-wrap gap-2">
-                <span className="border-2 border-[#0acf83] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_figma.svg')] bg-contain bg-no-repeat"></span> Figma
-                </span>
-                <span className="border-2 border-[#ff6c37] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_postman.svg')] bg-contain bg-no-repeat"></span> Postman
-                </span>
-                <span className="border-2 border-[#f05032] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_git.svg')] bg-contain bg-no-repeat"></span> Git
-                </span>
-                <span className="border-2 border-white p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_github.svg')] bg-contain bg-no-repeat"></span> GitHub
-                </span>
-                {/* <span className="border-2 border-[#007ee5] p-1 rounded-sm flex items-center gap-1 bg-secondary">
-                  <span className="h-4 w-4 bg-[url('/tool_docker.svg')] bg-contain bg-no-repeat"></span> Docker
-                </span> */}
+              <div className="flex flex-wrap gap-x-2 gap-y-3">
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Figma</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Postman</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Git</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">GitHub</Badge>
+                {/* <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Docker</Badge> */}
               </div>
             </section>
           </section>
