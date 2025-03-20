@@ -6,11 +6,15 @@ import TextAnimation from "@/components/text-animation";
 import { Button } from "../ui/button";
 import { useRouter } from 'next/navigation'
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Intro() {
 
   const router = useRouter()
-  router.prefetch("/projects")
+
+  useEffect(() => {
+    router.prefetch("/projects");
+  }, [router]); 
 
   return (
     <main className="relative z-10 flex flex-col items-center gap-10 bg-background px-12 sm:p-0">

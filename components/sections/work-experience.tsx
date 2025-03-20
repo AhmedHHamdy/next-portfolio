@@ -6,10 +6,14 @@ import { Button } from "../ui/button";
 import { useRouter } from 'next/navigation'
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function WorkExperience() {
   const router = useRouter()
-  router.prefetch("/projects")
+
+  useEffect(() => {
+    router.prefetch("/projects")
+  }, [router])
 
   return (
     <section className="flex flex-col lg:grid lg:grid-cols-2 gap-10 mt-10 px-10">
