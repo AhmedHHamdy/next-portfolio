@@ -43,7 +43,7 @@ export default function Projects() {
                     <AvatarFallback>POS</AvatarFallback>
                   </Avatar>
                   
-                  <h3 className="mt-4 text-lg">Smart POS</h3>
+                  <h3 className="mt-4 text-lg text-start">Smart POS</h3>
                   <p className="text-gray-400 my-2 text-sm text-start">Designed and Developed Smart POS three operational layers: hall, cashier, and call center. The system streamlines restaurant and retail operations by providing real-time order status tracking, admin settings for managing personnel and user roles, and dynamic financial reporting.</p>
                   
                   <section className="flex items-center flex-wrap gap-x-2 gap-y-3 mt-5">
