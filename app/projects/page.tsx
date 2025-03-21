@@ -32,7 +32,7 @@ export default function Projects() {
 
         <p className="text-gray-400 text-md w-11/12">I've done a variety of work, from simple websites to complex web applications. Here are a few of my favorites. Contact me if you would like to work together!</p>
 
-        <section className="grid grid-cols-3 gap-x-10 gap-y-10 mt-10">
+        <section className="flex flex-col lg:grid lg:grid-cols-3 gap-x-10 gap-y-10 mt-10">
   
           <Dialog>
             <DialogTrigger>
