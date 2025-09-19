@@ -27,7 +27,7 @@ export default function Projects() {
     <section className="px-10 relative bg-background w-full sm:w-12/12 xl:max-w-6xl mx-auto z-1000 py-2">
       <section className="sm:px-12">
         <h2 className="text-4xl font-semibold self-start mb-6">
-          Some of my recent work
+          Some of my work
         </h2>
 
         <p className="text-gray-400 text-md w-11/12">I've done a variety of work, from simple websites to complex web applications. Here are a few of my favorites. Contact me if you would like to work together!</p>
@@ -110,6 +110,82 @@ export default function Projects() {
               </DialogHeader>
             </DialogContent>
           </Dialog>
+
+          <section className="w-full h-[34rem] flex flex-col items-start border-2 p-4 rounded-lg hover:bg-[#141418] transition-all duration-300 ease-in-out cursor-pointer">
+            <section className="flex-grow">
+              <Avatar className="w-full h-40 rounded-lg">
+                <AvatarImage src={"/bb-logo.png"} alt="Rental logo Image" />
+                <AvatarFallback>Business Building</AvatarFallback>
+              </Avatar>
+              
+              <h3 className="mt-4 text-lg">Business Building</h3>
+              <p className="text-gray-400 text-sm my-2 text-start">Developed a company website with a clean, responsive, and mobile-friendly design. Integrated backend support for managing marketing content, enabling easy updates and streamlined content management.</p>
+              
+              <section className="flex items-center flex-wrap gap-x-2 gap-y-3 mt-5">
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Next.js</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Typescript</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Laravel</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">MySQL</Badge>
+              </section>
+            </section>
+
+            <section className="flex justify-between gap-4 items-center w-full">
+              <Link href={"https://bb4it.org/"} target="_blank" className="flex gap-2 items-center mt-4 text-[#ba68bb] hover:text-white"><Link2 color="#ba68bb" className="h-5" />Live</Link>
+            </section>
+          </section>
+
+          <section className="w-full h-[34rem] flex flex-col items-start border-2 p-4 rounded-lg hover:bg-[#141418] transition-all duration-300 ease-in-out cursor-pointer">
+            <section className="flex-grow">
+              <Avatar className="w-full h-40 rounded-lg">
+                <AvatarImage src={"/alffan-logo.png"} alt="Rental logo Image" />
+                <AvatarFallback>Al Fan Almumayaz</AvatarFallback>
+              </Avatar>
+              
+              <h3 className="mt-4 text-lg">Al Fan Almumayaz</h3>
+              <p className="text-gray-400 text-sm my-2 text-start">Developed a website to showcase products, featuring a clean and responsive design. Implemented a product inquiry system that allows customers to request specific items directly. and mobile-friendly layouts.</p>
+              
+              <section className="flex items-center flex-wrap gap-x-2 gap-y-3 mt-5">
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">HTML</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">CSS</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">SASS</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Bootstrap</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Javascript</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Laravel</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">MySQL</Badge>
+              </section>
+            </section>
+
+            <section className="flex justify-between gap-4 items-center w-full">
+              <Link href={"https://alfanalmumayaz.com/"} target="_blank" className="flex gap-2 items-center mt-4 text-[#ba68bb] hover:text-white"><Link2 color="#ba68bb" className="h-5" />Live</Link>
+            </section>
+          </section>
+
+          <section className="w-full h-[34rem] flex flex-col items-start border-2 p-4 rounded-lg hover:bg-[#141418] transition-all duration-300 ease-in-out cursor-pointer">
+            <section className="flex-grow">
+              <Avatar className="w-full h-40 rounded-lg">
+                <AvatarImage src={"/rental.jpg"} alt="Rental logo Image" />
+                <AvatarFallback>Rental</AvatarFallback>
+              </Avatar>
+              
+              <h3 className="mt-4 text-lg">Rental</h3>
+              <p className="text-gray-400 text-sm my-2 text-start">
+                Maintained an e-commerce platform for renting photography equipment, 
+                using HTML, CSS, and JavaScript for the frontend, with Laravel for the backend. 
+                Customized the UI for a modern, responsive design, enabling clients 
+                to browse, rent, and manage equipment efficiently.
+              </p>              
+              <section className="flex items-center flex-wrap gap-x-2 gap-y-3 mt-5">
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Vue.js</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Bootstrap</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">Laravel</Badge>
+                <Badge className="text-[#7E22CE] bg-[#E9D5FF] h-6">MySQL</Badge>
+              </section>
+            </section>
+
+            <section className="flex justify-between gap-4 items-center w-full">
+              <Link href={"https://rental.sa/"} target="_blank" className="flex gap-2 items-center mt-4 text-[#ba68bb] hover:text-white"><Link2 color="#ba68bb" className="h-5" />Live</Link>
+            </section>
+          </section> 
 
           <section className="w-full h-[34rem] flex flex-col items-start border-2 p-4 rounded-lg hover:bg-[#141418] transition-all duration-300 ease-in-out cursor-pointer">
             <section className="flex-grow">
