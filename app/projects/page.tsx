@@ -130,7 +130,7 @@ export default function Projects() {
             </section>
 
             <section className="flex justify-between gap-4 items-center w-full">
-              <Link href={"https://bb4it.org/"} target="_blank" className="flex gap-2 items-center mt-4 text-[#ba68bb] hover:text-white"><Link2 color="#ba68bb" className="h-5" />Live</Link>
+              <Link href={"https://businessbuilding.sa/"} target="_blank" className="flex gap-2 items-center mt-4 text-[#ba68bb] hover:text-white"><Link2 color="#ba68bb" className="h-5" />Live</Link>
             </section>
           </section>
 

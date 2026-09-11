@@ -59,7 +59,7 @@ export default function Intro() {
               View Projects <FolderGit color="#ba68bb" className="h-6" />
             </Button>
             <Link
-              href={"https://drive.google.com/file/d/1oVqYN7HF7izLmg9H_7LakGXSdCfDBaak/view?usp=sharing"}
+              href={"https://drive.google.com/file/d/1AfeG-zWgAO6XaHZuMB0A6jGRwxtdcAhl/view?usp=sharing"}
               target="_blank"
               className="bg-secondary rounded-[0.3rem] px-4 flex items-center gap-2 hover:bg-secondary/80"
               >
