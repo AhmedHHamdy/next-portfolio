@@ -134,7 +134,7 @@ export default function Projects() {
             </section>
           </section>
 
-          <section className="w-full h-[34rem] flex flex-col items-start border-2 p-4 rounded-lg hover:bg-[#141418] transition-all duration-300 ease-in-out cursor-pointer">
+          {/* <section className="w-full h-[34rem] flex flex-col items-start border-2 p-4 rounded-lg hover:bg-[#141418] transition-all duration-300 ease-in-out cursor-pointer">
             <section className="flex-grow">
               <Avatar className="w-full h-40 rounded-lg">
                 <AvatarImage src={"/alffan-logo.png"} alt="Rental logo Image" />
@@ -158,7 +158,7 @@ export default function Projects() {
             <section className="flex justify-between gap-4 items-center w-full">
               <Link href={"https://alfanalmumayaz.com/"} target="_blank" className="flex gap-2 items-center mt-4 text-[#ba68bb] hover:text-white"><Link2 color="#ba68bb" className="h-5" />Live</Link>
             </section>
-          </section>
+          </section> */}
 
           <section className="w-full h-[34rem] flex flex-col items-start border-2 p-4 rounded-lg hover:bg-[#141418] transition-all duration-300 ease-in-out cursor-pointer">
             <section className="flex-grow">
